@@ -60,16 +60,18 @@ header>button{
     width: 15%;
     display: flex;
     flex-direction: column;
+    position:relative;
 }
 
 #big-logo{
     color:white;
     height:70px;
-    padding:15px;
+    padding:15px 50px 15px 15px;
 }
 
 #upper-nav{
     padding-top: 20px;
+    height:130px;
 }
 
 #upper-nav div:first-child{
@@ -96,6 +98,78 @@ header>button{
     display: inline-block;
 }
 
+
+
+
+#middle-nav>#playlist{
+    color:white;
+    font-size:0.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#middle-nav>#new-playlist{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+#new-playlist-button{
+    height: 35px;
+    width:35px;
+    background-color: #a3a3a3;
+    border:1px solid black;
+    margin-right:5px;
+    font-size:1.8em;
+    font-weight:bold;
+}
+
+
+#playlists-created{
+    height:120px;
+    overflow-y:scroll;
+}
+
+#playlists-created>p{
+    margin-top: 5px;
+}
+
+
+#lower-nav{
+    position:absolute;
+    bottom:0;
+    background-color: black;
+    width: 100%;
+
+}
+
+#install{
+    font-size:0.7em;
+    padding-bottom:5px;
+    border-bottom:1px solid #1c1c1c;
+}
+
+#install>img{
+    height:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#user{
+    color:white;
+}
+
+#user>img{
+    height:20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:10px 0;
+    background-color: #808080;
+    border-radius:20px;
+}
+
+
 .container{
     position: relative;
     height: 100vh;
@@ -110,7 +184,11 @@ header>button{
 }
 
 .grey-text{
-    color:#666666
+    color:#666666;
 
+}
+
+.padding-left-nav{
+    padding:0 10px;
 }
 
