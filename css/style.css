@@ -4,6 +4,11 @@
     box-sizing:border-box;
 }
 
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
 
 header{
     float:right;
@@ -68,18 +73,22 @@ header>button{
 }
 
 #upper-nav div:first-child{
-    border-left: 1px solid yellowgreen;
+    border-left: 3px solid yellowgreen;
     color:white;
+    margin-top: 0;
 }
 
 #upper-nav div{
-    padding-left:10px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-left:3px solid transparent;
 }
 
 
 
 #upper-nav img{
     display: inline-block;
+    vertical-align: bottom;
     width:20px;
 }
 
@@ -98,5 +107,10 @@ header>button{
     display: table;
     clear:both;
     
+}
+
+.grey-text{
+    color:#666666
+
 }
 
