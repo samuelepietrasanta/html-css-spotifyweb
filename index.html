@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -14,98 +16,141 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <button>Effettua l'upgrade</button>
-        </header>
-        <div id="left-nav">
+
+        <main class="clearfix">
 
 
-            <div id="big-logo">
-            <img src="img/logo.svg" alt="Spotify logo">
-            </div>
-
-
-            <div id="upper-nav">
-
-                <div> 
-                    <img src="img/home.svg" alt="home">
-                    <p>Home</p>
-                </div>
-
-
-                <div class="grey-text">
-                    <img src="img/search.svg" alt="search">
-                    <p>Cerca</p>
-                </div>
-
-                <div class="grey-text">
-                    <img src="img/libreria.svg" alt="La tua libreria">
-                    <p>La tua libreria</p>
-                </div>
-
-            </div>
-
-            <div id="middle-nav">
-                <div id="playlist">
-                    <h3>playlist</h3>
-                </div>
-
-                <div id="new-playlist" class="padding-left-nav">
-                    <button id="new-playlist-button"> + </button>
-                    <p class="grey-text"> Crea Playlist</p>
-                </div>
-
-
-                <div id="playlists-created" class="padding-left-nav">
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                    <p class="grey-text">Nome Playlist</p>
-                </div>
-            </div>
-
-            <div id="lower-nav" class="padding-left-nav">
-                <div id="install" class="grey-text"> 
-                    <img src="img/download.svg" alt=""> Installa app
-                </div>
-                <div id="user">
-                    <img src="img/profile.svg" alt="Profilo"> Sam_St1
-                </div>
-                    
-            </div>
             
-        </div>
+            <div id="left-nav" class="fl">
 
 
-        <main>
-            <div id="main-nav">
-                <div class="main-nav-item ">in evidenza</div>
-                <div class="main-nav-item">podcast</div>
-                <div class="main-nav-item">classifiche</div>
-                <div class="main-nav-item">generi e mood</div>
-                <div class="main-nav-item">nuove uscite</div>
-                <div class="main-nav-item">scopri</div>
+                <div id="big-logo">
+                <img src="img/logo.svg" alt="Spotify logo">
+                </div>
 
+
+                <div id="upper-nav">
+
+                    <div> 
+                        <img src="img/home.svg" alt="home">
+                        <p>Home</p>
+                    </div>
+
+
+                    <div class="grey-text">
+                        <img src="img/search.svg" alt="search">
+                        <p>Cerca</p>
+                    </div>
+
+                    <div class="grey-text">
+                        <img src="img/libreria.svg" alt="La tua libreria">
+                        <p>La tua libreria</p>
+                    </div>
+
+                </div>
+
+                <div id="middle-nav">
+                    <div id="playlist">
+                        <h3>playlist</h3>
+                    </div>
+
+                    <div id="new-playlist" class="padding-left-nav">
+                        <button id="new-playlist-button"> + </button>
+                        <p class="grey-text"> Crea Playlist</p>
+                    </div>
+
+
+                    <div id="playlists-created" class="padding-left-nav">
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                        <p class="grey-text">Nome Playlist</p>
+                    </div>
+                </div>
+
+                <div id="lower-nav" class="padding-left-nav">
+                    <div id="install" class="grey-text"> 
+                        <img src="img/download.svg" alt=""> Installa app
+                    </div>
+                    <div id="user">
+                        <img src="img/profile.svg" alt="Profilo"> Sam_St1
+                    </div>
+                        
+                </div>
+                
             </div>
 
-            <div class="title">recently played</div>
-            <div id="recently-played">
-                <div class="main-item"></div>
-                <div class="main-item"></div>
-                <div class="main-item"></div>
-                <div class="main-item"></div>
-                <div class="main-item"></div>
-                <div class="main-item"></div>
 
-            </div>
-            
+            <section id="songs" class="fl">
+
+                <div id="upgrade-banner">
+                    <button>Effettua l'upgrade</button>
+                </div>
+
+                <div id="main-nav">
+                    <div class="main-nav-item ">in evidenza</div>
+                    <div class="main-nav-item">podcast</div>
+                    <div class="main-nav-item">classifiche</div>
+                    <div class="main-nav-item">generi e mood</div>
+                    <div class="main-nav-item">nuove uscite</div>
+                    <div class="main-nav-item">scopri</div>
+
+                </div>
+
+                <div class="title">recently played</div>
+                <div id="recently-played">
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+
+                </div>
+                
+            </section>
+
         </main>
 
 
-        <footer></footer>
+        <footer>
+
+
+            <div id="miniature-song" class="grey-text">
+                <img src="img/sinister.jpeg" alt="song playing">
+                <div id="footer-song-name">
+                    <p> Sinister</p>
+                    <p> Brano Nome</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+
+            </div>
+
+
+            <div id="playbar-container">
+                <div id="playbar-buttons">
+                    <i class="fas fa-random small-button"></i>
+                    <i class="fas fa-step-backward small-button"></i>
+                    <i class="far fa-play-circle big-button"></i>
+                    <i class="fas fa-step-forward small-button"></i>
+                    <i class="fas fa-undo small-button reverse"></i>
+                </div>
+                <div id="playbar">
+                    <span>0:25</span>
+                    <div id="playbar-bar"></div>
+                    <span>4:35</span>
+
+                </div>
+            </div>
+
+
+            <div id="volume"></div>
+
+        </footer>
     </div>
     
 </body>
