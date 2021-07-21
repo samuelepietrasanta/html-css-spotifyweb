@@ -188,7 +188,6 @@ button{
     justify-content: space-evenly;
     align-items: center;
     padding:20px;
-    background-color: blue;
     font-size:0.8em;
 }
 
@@ -200,7 +199,6 @@ button{
     height: 100%;
     width: 50%;
     padding:20px;
-    background-color: red;
 }
 
 #playbar-buttons{
@@ -226,6 +224,7 @@ button{
     border-radius: 20%;
     border:1px solid grey;
     width: 30%;
+    margin:0 5px;
 }
 
 #playbar span{
@@ -236,7 +235,22 @@ button{
 #volume{
     height: 100%;
     width: 20%;
-    background-color: greenyellow;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+#volume i{
+    margin-right:10px;
+    font-size:0.7em;
+}
+
+#volume-bar{
+    height: 2px;
+    border-radius: 20%;
+    border:1px solid grey;
+    width:60%;
 }
 
 #footer-song-name{
