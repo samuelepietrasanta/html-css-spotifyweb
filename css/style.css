@@ -265,12 +265,6 @@ button{
     border-bottom: 1px solid greenyellow;
 }
 
-#recently-played{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
 
 
 .container{
@@ -308,16 +302,40 @@ button{
     font-size:1.1em;
     font-weight: bold;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.albums{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color:white;
+}
+
+.single-album{
+    height: 70%;
+    width: 100%;
+}
+
+.under-album{
+    height: 30%;
+    width: 100%;
 }
 
 .main-item{
-    flex-basis: 100px;
     height: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    width: 20% ;
     margin:10px;
     background-color: blue;
+}
+
+.main-item img{
+    height: 100%;
+}
+
+.round{
+    border-radius:50px;
 }
 
 .small-button{
