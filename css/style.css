@@ -181,6 +181,20 @@ button{
     justify-content: center;
 }
 
+#artists{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color:white;
+   
+}
+
+#artists img{
+    border-radius:50%;
+}
+
 #miniature-song{
     height: 100%;
     width: 20%;
@@ -194,6 +208,8 @@ button{
 #miniature-song img{
     height: 100%;
 }
+
+
 
 #playbar-container{
     height: 100%;
@@ -314,29 +330,29 @@ button{
 }
 
 .single-album{
-    height: 70%;
     width: 100%;
 }
 
 .under-album{
-    height: 30%;
     width: 100%;
+    text-align: center;
+    font-size:0.8em;
 }
 
 .main-item{
-    height: 100px;
-    width: 20% ;
+    width: 120px;
     margin:10px;
-    background-color: blue;
 }
 
 .main-item img{
-    height: 100%;
+    width:100%;
 }
 
-.round{
-    border-radius:50px;
+.subtitle{
+    font-size:.6em;
+    margin:20px 0;
 }
+
 
 .small-button{
     font-size:.7em;
