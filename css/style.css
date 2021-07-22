@@ -14,7 +14,7 @@ body{
 
 #songs{
     float:right;
-    width: 85%;
+    width: calc(100% - 180px);
     height: calc(100vh - 80px);
     background-color: rgb(25, 25, 31);
     overflow-y: scroll;
@@ -57,11 +57,16 @@ button{
     font-size: 0.6em;
 }
 
+#upgrade-banner>button:hover{
+    font-size:0.75em;
+    cursor:pointer;
+}
+
 #left-nav{
     float:left;
     height: calc( 100vh - 80px);
     background-color: black;
-    width: 15%;
+    width: 180px;
     display: flex;
     flex-direction: column;
     position:relative;
@@ -102,6 +107,11 @@ button{
     display: inline-block;
 }
 
+#upper-nav p:hover{
+    color:white;
+    cursor:pointer;
+}
+
 
 
 
@@ -116,6 +126,16 @@ button{
     height: 50px;
     display: flex;
     align-items: center;
+}
+
+#new-playlist:hover p{
+    color:white;
+    cursor: pointer;
+}
+
+#new-playlist:hover button{
+    background-color: white;
+    cursor:pointer;
 }
 
 
@@ -139,6 +159,11 @@ button{
     margin-top: 5px;
 }
 
+#playlists-created p:hover{
+    color:white;
+    cursor:pointer;
+}
+
 
 #lower-nav{
     position:absolute;
@@ -152,6 +177,11 @@ button{
     font-size:0.7em;
     padding-bottom:5px;
     border-bottom:1px solid #1c1c1c;
+}
+
+#install:hover{
+    color:white;
+    cursor: pointer;
 }
 
 #install>img{
@@ -181,6 +211,8 @@ button{
     justify-content: center;
 }
 
+
+
 #artists{
 
     width: 100%;
@@ -209,6 +241,11 @@ button{
     height: 100%;
 }
 
+#miniature-song i:hover{
+    color:white;
+    cursor: pointer;
+}
+
 
 
 #playbar-container{
@@ -228,6 +265,14 @@ button{
     margin-right:20px;
 }
 
+#playbar-buttons i:hover{
+    cursor: pointer;
+}
+
+#playbar-buttons i:nth-child(3):hover{
+    font-size:1.4em;
+}
+
 #playbar{
     padding-top:10px;
     display: flex;
@@ -241,6 +286,13 @@ button{
     border:1px solid grey;
     width: 30%;
     margin:0 5px;
+}
+
+#mini-playbar-bar{
+    height: 1px;
+    border-radius:20%;
+    border:1px solid rgb(226, 226, 226);
+    width: 25%;
 }
 
 #playbar span{
@@ -269,12 +321,27 @@ button{
     width:60%;
 }
 
+#mini-volume-bar{
+    height: 1px;
+    border-radius:20%;
+    border:1px solid rgb(226, 226, 226);
+    width: 15%;
+}
+
+
+
 #footer-song-name{
     overflow:hidden;
 }
 
 #footer-song-name p:first-child{
     color:white;
+}
+
+#footer-song-name p:nth-child(2):hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .main-nav-item:first-child{
@@ -313,6 +380,11 @@ button{
     padding:0 5px 0 5px ;
 }
 
+.main-nav-item:hover{
+    color:white;
+    cursor: pointer;
+}
+
 .title{
     color:white;
     font-size:1.1em;
@@ -331,7 +403,18 @@ button{
 
 .single-album{
     width: 100%;
+    position: relative;
 }
+
+.single-album i{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+    font-size:3em;
+    display: none;
+}
+
 
 .under-album{
     width: 100%;
@@ -344,7 +427,18 @@ button{
     margin:10px;
 }
 
-.main-item img{
+
+.main-item:hover .single-album img{
+    opacity:0.5;
+}
+
+.main-item:hover .single-album i{
+    display: block;
+}
+
+
+
+.single-album img{
     width:100%;
 }
 
