@@ -79,6 +79,12 @@ button{
     padding:15px 50px 15px 15px;
 }
 
+#small-logo{
+    display: none;
+    width: 20px;
+    margin:10px 15px 0 13px;
+}
+
 #upper-nav{
     padding-top: 20px;
     height:130px;
@@ -498,4 +504,56 @@ button{
     background-color: white;
     border-radius: 50%;
     display: none;
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .albums{
+        flex-wrap:wrap;
+    }
+
+    .main-item{
+        width: 17%;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+
+
+    #left-nav{
+        width: 50px;
+    }
+
+    #songs{
+        width: calc(100% - 50px);
+    }
+
+    #big-logo{
+        display: none;
+    }
+
+    #small-logo{
+        display: initial;
+    }
+
+    #left-nav p{
+        display: none;
+    }
+
+    #middle-nav{
+        display: none;
+    }
+
+    #lower-nav span{
+        display: none;
+    }
+    
+    .albums{
+        flex-wrap:wrap;
+    }
+
+    .main-item{
+        width:40%;
+    }
 }
